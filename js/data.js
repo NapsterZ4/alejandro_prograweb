@@ -10,7 +10,6 @@ function sendData(){
   }
 
   let header = new Headers();
-  debugger;
   console.log(header);
 
   let res = fetch("http://161.35.225.72:8000/v1/webform/", {
