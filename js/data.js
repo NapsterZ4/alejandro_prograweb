@@ -13,7 +13,7 @@ function sendData(){
   debugger;
   console.log(header);
 
-  let res = fetch("http://127.0.0.1:8000/v1/webform/", {
+  let res = fetch("http://161.35.225.72:8000/v1/webform/", {
     method: 'POST',
     body: JSON.stringify(data),
     mode: "cors",
