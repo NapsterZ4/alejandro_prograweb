@@ -1,4 +1,4 @@
-async function sendData() {
+async function sendData(){
   let name = document.getElementById("name").value;
   let username = document.getElementById("username").value;
   let password = document.getElementById("password").value;
@@ -16,17 +16,12 @@ async function sendData() {
   //   "Content-Length": "5",
   //   "Host": "61.35.225.72:8000",
   // }
-  let request = new Request("http://127.0.0.1:8000/v1/webform/");
+  // let request = new Request("http://127.0.0.1:8000/v1/webform/");
 
-  const res = await fetch(request, {
+  const res = await fetch("http://161.35.225.72/api/", {
     method: 'POST',
     body: JSON.stringify(data),
-    headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Methods': 'POST',
-      'Accept': 'application/json, text/plain, */*',
-      'Content-Type': 'application/json'
-    },
+    headers: {},
     mode: "cors"
   }).then(function (response) {
     if (response.ok) {
