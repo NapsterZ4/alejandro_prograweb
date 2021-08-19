@@ -30,6 +30,8 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+
+	<script src="../js/data.js"></script>
 <!--===============================================================================================-->
 </head>
 <body>
@@ -71,23 +73,23 @@
 					Sign Up
 				</span>
 
-				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter yout name">
-					<input class="input100" type="text" name="username" placeholder="name">
+				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter your name">
+					<input class="input100" type="text" name="username" placeholder="name" id="name">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input m-b-20" data-validate="Enter username or email">
-					<input class="input100" type="text" name="username" placeholder="username or email">
+					<input class="input100" type="text" name="username" placeholder="username or email" id="username">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="wrap-input100 validate-input m-b-25" data-validate = "Enter password">
-					<input class="input100" type="password" name="pass" placeholder="password">
+					<input class="input100" type="password" name="pass" placeholder="password" id="password">
 					<span class="focus-input100"></span>
 				</div>
 
 				<div class="container-login100-form-btn">
-					<button class="login100-form-btn">
+					<button class="login100-form-btn" onclick="sendData()">
 						Sign Up
 					</button>
 				</div>
