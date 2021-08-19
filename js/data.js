@@ -16,14 +16,15 @@ async function sendData() {
   //   "Content-Length": "5",
   //   "Host": "61.35.225.72:8000",
   // }
-  let request = new Request("http://161.35.225.72/api");
+  let request = new Request("http://127.0.0.1:8000/v1/webform/");
 
   const res = await fetch(request, {
     method: 'POST',
     body: JSON.stringify(data),
     headers: {
       'Access-Control-Allow-Origin': '*',
-      'Accept': 'application/json',
+      'Access-Control-Allow-Methods': 'POST',
+      'Accept': 'application/json, text/plain, */*',
       'Content-Type': 'application/json'
     },
     mode: "cors"
